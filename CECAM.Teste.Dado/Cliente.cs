@@ -45,6 +45,31 @@ namespace CECAM.Teste.Dado
             return obj;
         }
 
+        public T Consultar<T>() where T : ICliente, new()
+        {
+            T obj = default(T);
+
+            using (SqlCommand sqlCommand = new SqlCommand())
+            {
+                sqlCommand.CommandType = CommandType.Text;
+                sqlCommand.CommandText = "select * from Cliente";
+
+                using (SqlConnection sqlConnection = new SqlConnection(ConsultarStringConexao()))
+                {
+                    sqlCommand.Connection = sqlConnection;
+                    sqlConnection.Open();
+                    SqlDataReader dr = sqlCommand.ExecuteReader();
+                    if (dr.Read())
+                    {
+                        obj = CarregarTipo<T>(dr);
+                    }
+
+                }
+
+            }
+            return obj;
+        }
+
         private string Incluir()
         {
             string toReturn;
