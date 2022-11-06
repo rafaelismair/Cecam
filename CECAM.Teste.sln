@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CECAM.Teste.Dado", "CECAM.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CECAM.Teste.Tipo", "CECAM.Teste.Tipo\CECAM.Teste.Tipo.csproj", "{35802DCE-7620-40AA-B491-48406C361C90}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CECAM.Teste.Banco", "CECAM.Teste.Banco\CECAM.Teste.Banco.sqlproj", "{1E1EE8B5-0F91-41D4-85FD-C91D779A1642}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{35802DCE-7620-40AA-B491-48406C361C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35802DCE-7620-40AA-B491-48406C361C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35802DCE-7620-40AA-B491-48406C361C90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E1EE8B5-0F91-41D4-85FD-C91D779A1642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E1EE8B5-0F91-41D4-85FD-C91D779A1642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E1EE8B5-0F91-41D4-85FD-C91D779A1642}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1E1EE8B5-0F91-41D4-85FD-C91D779A1642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E1EE8B5-0F91-41D4-85FD-C91D779A1642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E1EE8B5-0F91-41D4-85FD-C91D779A1642}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
