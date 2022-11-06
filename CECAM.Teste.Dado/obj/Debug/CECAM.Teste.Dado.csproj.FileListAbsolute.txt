@@ -1,6 +1,9 @@
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Dado\bin\Debug\CECAM.Teste.Dado.dll
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Dado\bin\Debug\CECAM.Teste.Dado.pdb
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Dado\bin\Debug\CECAM.Teste.Tipo.dll
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Dado\bin\Debug\CECAM.Teste.Tipo.pdb
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Dado\obj\Debug\CECAM.Teste.Dado.csproj.AssemblyReference.cache
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Dado\obj\Debug\CECAM.Teste.Dado.csproj.CoreCompileInputs.cache
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Dado\obj\Debug\CECAM.Teste.Dado.csproj.CopyComplete
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Dado\obj\Debug\CECAM.Teste.Dado.dll
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Dado\obj\Debug\CECAM.Teste.Dado.pdb

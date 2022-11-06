@@ -8,5 +8,5 @@ namespace CECAM.Teste.Tipo.Interface
         
         string Descricao { get; set; }
     }
-    }
+    
 }
