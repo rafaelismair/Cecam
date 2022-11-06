@@ -1,0 +1,10 @@
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Banco\bin\Debug\CECAM.Teste.Banco.dacpac
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Banco\bin\Debug\CECAM.Teste.Banco.dll
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Banco\bin\Debug\CECAM.Teste.Banco.pdb
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Banco\obj\Debug\CECAM.Teste.Banco.sqlproj.AssemblyReference.cache
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Banco\obj\Debug\Model.xml
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Banco\obj\Debug\refactor.xml
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Banco\obj\Debug\postdeploy.sql
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Banco\obj\Debug\predeploy.sql
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Banco\obj\Debug\CECAM.Teste.Banco.dll
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Banco\obj\Debug\CECAM.Teste.Banco.pdb

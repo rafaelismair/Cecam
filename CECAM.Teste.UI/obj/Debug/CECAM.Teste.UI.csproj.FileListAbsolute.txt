@@ -67,6 +67,7 @@ C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.UI\bin\Newtonsoft.Json.xml
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.UI\bin\Antlr3.Runtime.pdb
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.UI\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.UI\obj\Debug\CECAM.Teste.UI.csproj.AssemblyReference.cache
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.UI\obj\Debug\CECAM.Teste.UI.csproj.CoreCompileInputs.cache
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.UI\obj\Debug\CECAM.Teste.UI.csproj.CopyComplete
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.UI\obj\Debug\CECAM.Teste.UI.dll

@@ -1,11 +1,7 @@
 ﻿using CECAM.Teste.Tipo.Interface;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CECAM.Teste.Dado
 {
@@ -63,12 +59,11 @@ namespace CECAM.Teste.Dado
                     {
                         obj = CarregarTipo<T>(dr);
                     }
-
                 }
-
             }
             return obj;
         }
+
 
         private string Incluir()
         {
