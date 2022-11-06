@@ -5,27 +5,20 @@ using System.Data.SqlClient;
 
 namespace CECAM.Teste.Dado
 {
-    public class Cliente : Base
+    public class ClienteContato : Base
     {
-        public ICliente Incluir (ICliente obj)
+        public IClienteContato Incluir(IClienteContato obj)
         {
 
-          
+
             using (SqlCommand sqlCommand = new SqlCommand())
             {
                 sqlCommand.CommandType = CommandType.Text;
                 sqlCommand.CommandText = Incluir();
 
-                sqlCommand.Parameters.Add("@RazaoSocial", SqlDbType.VarChar).Value = obj.RazaoSocial;
-
-                if (!string.IsNullOrEmpty(obj.NomeFantasia))
-                    sqlCommand.Parameters.Add("@NomeFantasia", SqlDbType.VarChar).Value = obj.NomeFantasia;
-                else
-                    sqlCommand.Parameters.Add("@NomeFantasia", SqlDbType.VarChar).Value = DBNull.Value;
-
-                sqlCommand.Parameters.Add("@CNPJ", SqlDbType.VarChar).Value = obj.CNPJ;
-                sqlCommand.Parameters.Add("@ExisteIndicacao", SqlDbType.VarChar).Value = obj.ExisteIndicacao;
-                sqlCommand.Parameters.Add("@ExisteContato", SqlDbType.VarChar).Value = obj.ExisteContato ;
+                sqlCommand.Parameters.Add("@IDCliente", SqlDbType.VarChar).Value = obj.IDCliente;
+                sqlCommand.Parameters.Add("@IDTipoCliente", SqlDbType.VarChar).Value = obj.IDTipoContato;
+                sqlCommand.Parameters.Add("@Contato", SqlDbType.VarChar).Value = obj.Contato;
 
                 using (SqlConnection sqlConnection = new SqlConnection(ConsultarStringConexao()))
                 {
@@ -41,14 +34,14 @@ namespace CECAM.Teste.Dado
             return obj;
         }
 
-        public T Consultar<T>() where T : ICliente, new()
+        public T Consultar<T>() where T : IClienteContato, new()
         {
             T obj = default(T);
 
             using (SqlCommand sqlCommand = new SqlCommand())
             {
                 sqlCommand.CommandType = CommandType.Text;
-                sqlCommand.CommandText = "select * from Cliente";
+                sqlCommand.CommandText = "select * from ClienteContato";
 
                 using (SqlConnection sqlConnection = new SqlConnection(ConsultarStringConexao()))
                 {
@@ -69,23 +62,16 @@ namespace CECAM.Teste.Dado
         {
             string toReturn;
 
-            toReturn =  @"INSERT INTO [Cliente]
-                                       ([RazaoSocial]
-                                       ,[NomeFantasia]
-                                       ,[CNPJ]
-                                       ,[ExisteIndicacao]
-                                       ,[ExisteContato])
-                                 VALUES
-                                       (@RazaoSocial
-                                       , @NomeFantasia
-                                       , @CNPJ
-                                       , @ExisteIndicacao
-                                       , @ExisteContato)";
+            toReturn = @"INSERT INTO [ClienteContato]
+                               ([IDCliente]
+                               ,[IDTipoCliente]
+                               ,[Contato])
+                         VALUES
+                                (@IDCliente
+                               ,@IDTipoCliente
+                               ,@Contato)";
 
             return toReturn + this.ComandoRetornaIdentity();
         }
-
-
-
     }
 }

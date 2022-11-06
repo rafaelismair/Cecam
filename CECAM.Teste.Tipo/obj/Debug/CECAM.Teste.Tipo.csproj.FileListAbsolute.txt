@@ -1,6 +1,5 @@
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Tipo\bin\Debug\CECAM.Teste.Tipo.dll
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Tipo\bin\Debug\CECAM.Teste.Tipo.pdb
-C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Tipo\obj\Debug\CECAM.Teste.Tipo.csproj.AssemblyReference.cache
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Tipo\obj\Debug\CECAM.Teste.Tipo.csproj.CoreCompileInputs.cache
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Tipo\obj\Debug\CECAM.Teste.Tipo.dll
 C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Tipo\obj\Debug\CECAM.Teste.Tipo.pdb
