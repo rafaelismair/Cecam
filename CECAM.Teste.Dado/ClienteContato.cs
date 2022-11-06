@@ -69,7 +69,7 @@ namespace CECAM.Teste.Dado
                          VALUES
                                 (@IDCliente
                                ,@IDTipoCliente
-                               ,@Contato)";
+                               ,@Contato);";
 
             return toReturn + this.ComandoRetornaIdentity();
         }

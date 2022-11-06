@@ -44,6 +44,7 @@
     <Compile Include="Base.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="ClienteContato.cs" />
+    <Compile Include="ClienteIndicacao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TipoContato.cs" />
   </ItemGroup>
