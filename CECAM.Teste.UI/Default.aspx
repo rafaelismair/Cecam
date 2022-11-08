@@ -1,51 +1,112 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CECAM.Teste.UI._Default" %>
+﻿<%@ Page Language="C#"  AutoEventWireup="true" 
+    CodeBehind="Default.aspx.cs" Inherits="CECAM.Teste.UI._Default" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<%--<%@ Page Language="C#" AutoEventWireup="true" CodeFile="CS.aspx.cs" Inherits="CS" %>--%>
 
-    <div class="row">
-        <div class="col-md-12">
-            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-
-            </asp:UpdatePanel>
-        </div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        body
+        {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+        table
+        {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        table th
+        {
+            background-color: #B8DBFD;
+            color: #333;
+            font-weight: bold;
+        }
+        table th, table td
+        {
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        table, table table td
+        {
+            border: 0px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div id="dvGrid" style="padding: 10px; width: 450px">
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" OnRowDataBound="OnRowDataBound"
+                    DataKeyNames="CustomerId" OnRowEditing="OnRowEditing" OnRowCancelingEdit="OnRowCancelingEdit"
+                    PageSize="3" AllowPaging="true" OnPageIndexChanging="OnPaging" OnRowUpdating="OnRowUpdating"
+                    OnRowDeleting="OnRowDeleting" EmptyDataText="No records has been added." Width="450">
+                    <Columns>
+                        <asp:TemplateField HeaderText="Name" ItemStyle-Width="150">
+                            <ItemTemplate>
+                                <asp:Label ID="lblName" runat="server" Text='<%# Eval("Name") %>'></asp:Label>
+                            </ItemTemplate>
+                            <EditItemTemplate>
+                                <asp:TextBox ID="txtName" runat="server" Text='<%# Eval("Name") %>' Width="140"></asp:TextBox>
+                            </EditItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Country" ItemStyle-Width="150">
+                            <ItemTemplate>
+                                <asp:Label ID="lblCountry" runat="server" Text='<%# Eval("Country") %>'></asp:Label>
+                            </ItemTemplate>
+                            <EditItemTemplate>
+                                <asp:TextBox ID="txtCountry" runat="server" Text='<%# Eval("Country") %>' Width="140"></asp:TextBox>
+                            </EditItemTemplate>
+                        </asp:TemplateField>
+                        <asp:CommandField ButtonType="Link" ShowEditButton="true" ShowDeleteButton="true"
+                            ItemStyle-Width="150" />
+                    </Columns>
+                </asp:GridView>
+                <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
+                    <tr>
+                        <td style="width: 150px">
+                            Name:<br />
+                            <asp:TextBox ID="txtName" runat="server" Width="140" />
+                        </td>
+                        <td style="width: 150px">
+                            Country:<br />
+                            <asp:TextBox ID="txtCountry" runat="server" Width="140" />
+                        </td>
+                        <td style="width: 150px">
+                            <asp:Button ID="btnAdd" runat="server" Text="Add" OnClick="Insert" />
+                        </td>
+                    </tr>
+                </table>
+            </ContentTemplate>
+        </asp:UpdatePanel>
     </div>
-
-
-<%--    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
-
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
-    </div>--%>
-
-</asp:Content>
+    </form>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.blockUI.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            BlockUI("dvGrid");
+            $.blockUI.defaults.css = {};
+        });
+        function BlockUI(elementID) {
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+            prm.add_beginRequest(function () {
+                $("#" + elementID).block({
+                    message: '<div align = "center">' + '<img src="images/loadingAnim.gif"/></div>',
+                    css: {},
+                    overlayCSS: { backgroundColor: '#000000', opacity: 0.6, border: '3px solid #63B2EB' }
+                });
+            });
+            prm.add_endRequest(function () {
+                $("#" + elementID).unblock();
+            });
+        };
+    </script>
+</body>
+</html>
