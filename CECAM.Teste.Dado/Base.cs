@@ -81,7 +81,7 @@ namespace CECAM.Teste.Dado
         {
             if (this._comandoRetornaIdentity == null)
             {
-                _comandoRetornaIdentity = " SELECT SCOPE_IDENTITY() AS ID;";
+                _comandoRetornaIdentity = " SELECT SCOPE_IDENTITY();";
             }
             return _comandoRetornaIdentity;
         }

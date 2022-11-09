@@ -35,8 +35,7 @@ namespace CECAM.Teste.Dado
                     sqlCommand.ExecuteNonQuery();
                 }
 
-                obj.ID = Convert.ToInt32(sqlCommand.Parameters["@ID"].Value);
-
+               
             }
 
             return obj;
@@ -83,7 +82,7 @@ namespace CECAM.Teste.Dado
                                        , @ExisteIndicacao
                                        , @ExisteContato)";
 
-            return toReturn + this.ComandoRetornaIdentity();
+            return toReturn;
         }
 
         public DataSet Listar(string filtro)

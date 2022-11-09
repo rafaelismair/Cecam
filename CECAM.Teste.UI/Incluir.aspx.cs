@@ -29,6 +29,7 @@ namespace CECAM.Teste.UI
             try
             {
                 obj.Incluir(incluir, null, null);
+                lblmsg.Text = "Registro Cadastrado com sucesso!";
             }
             catch(Exception ex)
             {

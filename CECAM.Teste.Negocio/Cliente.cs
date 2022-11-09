@@ -35,9 +35,15 @@ namespace CECAM.Teste.Negocio
                     throw new Exception("CNPJ Inválido");
                 }
 
-
-                DadoCliente.Incluir(cliente);
-
+                try
+                {
+                    DadoCliente.Incluir(cliente);
+                }
+                catch
+                {
+                    throw new Exception("Erro ao incluir no banco de dados");
+                }
+                scope.Complete();
             }
         }
 
