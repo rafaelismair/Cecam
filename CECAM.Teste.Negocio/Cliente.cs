@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -28,6 +29,11 @@ namespace CECAM.Teste.Negocio
             {
 
             }
+        }
+
+        public DataSet Listar(string filtro = null)
+        {
+            return this.DadoCliente.Listar(filtro);
         }
     }
 }

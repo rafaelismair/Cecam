@@ -15,7 +15,7 @@ namespace CECAM.Teste.Dado
 
             if (this._stringConexao == null)
             {
-                _stringConexao = string.Empty;
+                _stringConexao = "Server=RIF\\SQLEXPRESS;Database=CECAM;Trusted_Connection=True;";
             }
             return _stringConexao;
         }
