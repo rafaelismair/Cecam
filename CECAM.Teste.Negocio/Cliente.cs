@@ -23,10 +23,20 @@ namespace CECAM.Teste.Negocio
 
         }
 
-        public void Incluir()
+        public void Incluir(Tipo.Interface.ICliente cliente, 
+            Tipo.Interface.IClienteContato clienteContato,
+            Tipo.Interface.IClienteIndicacao clienteIndicacao)
         {
             using (TransactionScope scope = new TransactionScope())
             {
+
+                if (!Util.ValidarCNPJ.IsCnpj(cliente.CNPJ))
+                {
+                    throw new Exception("CNPJ Inválido");
+                }
+
+
+                DadoCliente.Incluir(cliente);
 
             }
         }

@@ -54,6 +54,11 @@
                     </td>  
                     
                 </tr> 
+               
+                <tr>  
+                   <td> <asp:Label ID="lblmsg" color="white" BorderColor="Red" runat="server" Text=""></asp:Label></td>  
+                    
+                </tr> 
                 <tr>  
                     <td colspan="2" align="right">  
                         <asp:Button ID="btnSubmit" runat="server" Text="Incluir" ValidationGroup="frmIncluir" OnClick="btnadd_Click" />  

@@ -220,6 +220,10 @@
       <Project>{1ae40740-e500-43e6-a779-a3155031b23e}</Project>
       <Name>CECAM.Teste.Negocio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CECAM.Teste.Tipo\CECAM.Teste.Tipo.csproj">
+      <Project>{35802dce-7620-40aa-b491-48406c361c90}</Project>
+      <Name>CECAM.Teste.Tipo</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

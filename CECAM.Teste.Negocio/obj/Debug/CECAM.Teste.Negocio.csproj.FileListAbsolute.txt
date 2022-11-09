@@ -1,0 +1,11 @@
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Negocio\bin\Debug\CECAM.Teste.Negocio.dll
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Negocio\bin\Debug\CECAM.Teste.Negocio.pdb
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Negocio\bin\Debug\CECAM.Teste.Dado.dll
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Negocio\bin\Debug\CECAM.Teste.Tipo.dll
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Negocio\bin\Debug\CECAM.Teste.Dado.pdb
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Negocio\bin\Debug\CECAM.Teste.Tipo.pdb
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Negocio\obj\Debug\CECAM.Teste.Negocio.csproj.AssemblyReference.cache
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Negocio\obj\Debug\CECAM.Teste.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Negocio\obj\Debug\CECAM.Teste.Negocio.csproj.CopyComplete
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Negocio\obj\Debug\CECAM.Teste.Negocio.dll
+C:\Users\Rafael\source\repos\CECAM.Teste\CECAM.Teste.Negocio\obj\Debug\CECAM.Teste.Negocio.pdb

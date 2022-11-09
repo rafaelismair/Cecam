@@ -17,8 +17,23 @@ namespace CECAM.Teste.UI
         protected void btnadd_Click(object sender, EventArgs e)
         {
 
+            Tipo.Entidade.Cliente incluir = new Tipo.Entidade.Cliente();
+
+            incluir.CNPJ = txtCnpj.Text;
+            incluir.ExisteContato = false;
+            incluir.ExisteIndicacao = false;
+            incluir.RazaoSocial = txtRazaoSocial.Text;
+            incluir.NomeFantasia = txtNomeFantasia.Text;
+
             Negocio.Cliente obj = new Negocio.Cliente();
-            obj.Incluir();
+            try
+            {
+                obj.Incluir(incluir, null, null);
+            }
+            catch(Exception ex)
+            {
+                lblmsg.Text = ex.Message;
+            }
            
         }
 
