@@ -13,11 +13,9 @@ namespace CECAM.Teste.UI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
             Negocio.Cliente obj = new Negocio.Cliente();
             grdDados.DataSource = obj.Listar();
             grdDados.DataBind();
-
         }
 
         protected void btn1_Click(object sender, EventArgs e)
